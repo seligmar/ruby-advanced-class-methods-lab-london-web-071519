@@ -50,8 +50,8 @@ class Song
     # @name = name 
     # @artist_name = artist_name 
      new_info = filename
-     new_info.split(" - ")
-     new_info.split(".")
+     first_half = new_info.split(" - ")
+     remove_end = new_info.split(".")
      
      #"Taylor Swift - Blank Space.mp3" 
      
