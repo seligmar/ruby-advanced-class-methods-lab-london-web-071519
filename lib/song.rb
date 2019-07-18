@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -9,5 +11,59 @@ class Song
   def save
     self.class.all << self
   end
+  
+  def self.create
+    new_song = self.new
+    @@all << new_song
+    new_song
+  end 
 
+  def self.new_by_name(name)
+     new_song = self.new  
+     new_song.name = name 
+     new_song 
+  end 
+  
+  def self.create_by_name(name)
+    new_song = self.new  
+     new_song.name = name 
+     @@all << new_song
+     new_song
+  end 
+  
+  def self.find_by_name(name)
+    song_find_by_name = @@all.find{ |songs| songs.name == name}  
+    song_find_by_name
+  end 
+  
+  def self.find_or_create_by_name(name)
+ #   binding.pry 
+    #   @@all.each do |songs|
+    #     if songs.name.include?(name)
+    #       self.find_by_name(name)
+    #     else self.create_by_name(name)
+    #   end
+    # end 
+  end 
+    
+  def self.alphabetical 
+    alphabetical_list = []
+    @@all.each do |song_instance|
+      alphabetical_list << song_instance.name
+    end 
+    new_list = alphabetical_list.sort { |a, b| a <=> b }
+    new_list.map do |x| 
+      @@all[x]
+    binding.pry 
+     #binding.pry
+   end 
+  end 
+  
+  # def self.create_from_filename
+  # end 
+  
+  def self.destroy_all
+    self.all.clear 
+  end 
+  
 end
