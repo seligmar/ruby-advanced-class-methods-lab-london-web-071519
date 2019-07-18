@@ -47,11 +47,13 @@ class Song
   # end 
   
    def self.create_from_filename(filename)
-     @name = name 
-     @artist_name = artist_name 
+    # @name = name 
+    # @artist_name = artist_name 
      new_info = filename
      new_info.split(" - ")
-     "Taylor Swift - Blank Space.mp3" 
+     new_info.split(".")
+     
+     #"Taylor Swift - Blank Space.mp3" 
      
    end 
   
