@@ -42,7 +42,8 @@ class Song
     
   def self.alphabetical 
    @@all.sort_by do |names|
-     names.name 
+     names.name.
+   end 
   end 
   
   # def self.create_from_filename
