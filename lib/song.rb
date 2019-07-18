@@ -55,8 +55,6 @@ class Song
     # new_list = alphabetical_list.sort { |a, b| a <=> b }
     # new_list.map do |x| 
     #   @@all[x]
-    binding.pry 
-     #binding.pry
  #  end 
   end 
   
