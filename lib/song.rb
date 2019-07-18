@@ -52,8 +52,8 @@ class Song
      new_info = filename
      first_half = new_info.split(" - ")
      name = first_half[0] 
-     title = first_half[1].split(".")
-     
+     second_half = first_half[1].split(".")
+     second_half[0] = title
     # second_half = first_half.split
      binding.pry
      #"Taylor Swift - Blank Space.mp3" 
