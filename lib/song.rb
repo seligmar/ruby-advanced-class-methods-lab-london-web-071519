@@ -41,7 +41,7 @@ class Song
   end 
     
   def self.alphabetical 
-    @@all.sort_by(name)  
+    @@all.sort_by   
     binding.pry
     # alphabetical_list = []
     # @@all.each do |song_instance|
