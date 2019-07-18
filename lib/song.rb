@@ -57,7 +57,7 @@ class Song
      song.artist_name = artist_name
      song
 
-    binding.pry
+   # binding.pry
    end 
    
   #   describe '.new_from_filename' do
