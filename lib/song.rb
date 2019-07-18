@@ -41,10 +41,10 @@ class Song
   end 
     
   def self.alphabetical 
-   @@all.sort_by do |names| 
+   @@all.sort_by do {|names| a <=> b }
      
-      names.name.sort { |a, b| a <=> b } 
-    binding.pry
+     # names.name.sort { |a, b| a <=> b } 
+   # binding.pry
     # alphabetical_list = []
     # @@all.each do |song_instance|
     #   alphabetical_list << song_instance.name
