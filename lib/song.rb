@@ -55,7 +55,7 @@ class Song
      name = second_half[0]
      song.name = name
      song.artist_name = artist_name
-     #song
+     @@all << song
 
    # binding.pry
    end 
