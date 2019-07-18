@@ -50,6 +50,9 @@ class Song
      @name = name 
      @artist_name = artist_name 
      filename.
+     
+     "Taylor Swift - Blank Space.mp3" 
+     
    end 
   
   def self.destroy_all
