@@ -47,6 +47,7 @@ class Song
   end 
     
   def self.alphabetical 
+    
     alphabetical_list = []
     @@all.each do |song_instance|
       alphabetical_list << song_instance.name
