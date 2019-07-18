@@ -51,7 +51,7 @@ class Song
     # new_list = alphabetical_list.sort { |a, b| a <=> b }
     # new_list.map do |x| 
     #   @@all[x]
-   end 
+   #end 
   end 
   
   # def self.create_from_filename
