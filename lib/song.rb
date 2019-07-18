@@ -46,6 +46,10 @@ class Song
   # end 
   # end 
   
+  def 
+    
+  end 
+  
    def self.create_from_filename(filename)
      song = self.new 
      new_info = filename
