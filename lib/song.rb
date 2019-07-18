@@ -51,7 +51,8 @@ class Song
     # @artist_name = artist_name 
      new_info = filename
      first_half = new_info.split(" - ")
-     first_half[0] = 
+     first_half[0] = name
+     first_half[1]
     # second_half = first_half.split(".")
      binding.pry
      #"Taylor Swift - Blank Space.mp3" 
