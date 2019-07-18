@@ -41,18 +41,8 @@ class Song
   end 
     
   def self.alphabetical 
-   @@all.sort_by {|names| a <=> b }
-     
-     # names.name.sort { |a, b| a <=> b } 
-   # binding.pry
-    # alphabetical_list = []
-    # @@all.each do |song_instance|
-    #   alphabetical_list << song_instance.name
-    # end 
-    # new_list = alphabetical_list.sort { |a, b| a <=> b }
-    # new_list.map do |x| 
-    #   @@all[x]
-   #end 
+   @@all.sort_by do |names|
+     names.name 
   end 
   
   # def self.create_from_filename
