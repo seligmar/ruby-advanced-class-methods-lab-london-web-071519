@@ -47,7 +47,9 @@ class Song
   # end 
   
    def self.create_from_filename(filename)
-     
+     @name = name 
+     @artist_name = artist_name 
+     filename.
    end 
   
   def self.destroy_all
