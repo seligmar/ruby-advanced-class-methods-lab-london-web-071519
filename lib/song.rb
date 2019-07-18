@@ -56,8 +56,6 @@ class Song
      song.name = name
      song.artist_name = artist_name
      @@all << song
-
-   # binding.pry
    end 
    
   #   describe '.new_from_filename' do
