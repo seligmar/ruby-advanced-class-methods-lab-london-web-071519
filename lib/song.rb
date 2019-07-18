@@ -58,7 +58,7 @@ class Song
     #   @@all[x]
     binding.pry 
      #binding.pry
-   end 
+ #  end 
   end 
   
   # def self.create_from_filename
