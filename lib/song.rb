@@ -47,15 +47,15 @@ class Song
   end 
     
   def self.alphabetical 
-    @@all.sort_by() 
+    @@all.sort_by { |a, b| a <=> b } 
     
-    alphabetical_list = []
-    @@all.each do |song_instance|
-      alphabetical_list << song_instance.name
-    end 
-    new_list = alphabetical_list.sort { |a, b| a <=> b }
-    new_list.map do |x| 
-      @@all[x]
+    # alphabetical_list = []
+    # @@all.each do |song_instance|
+    #   alphabetical_list << song_instance.name
+    # end 
+    # new_list = alphabetical_list.sort { |a, b| a <=> b }
+    # new_list.map do |x| 
+    #   @@all[x]
     binding.pry 
      #binding.pry
    end 
