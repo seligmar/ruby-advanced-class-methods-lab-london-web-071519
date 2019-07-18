@@ -49,7 +49,7 @@ class Song
    def self.create_from_filename(filename)
      @name = name 
      @artist_name = artist_name 
-     filename.
+     new_info = filename
      
      "Taylor Swift - Blank Space.mp3" 
      
