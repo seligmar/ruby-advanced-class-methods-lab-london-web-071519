@@ -37,7 +37,6 @@ class Song
   end 
   
   def self.find_or_create_by_name(name)
-    binding.pry 
       @@all.each do |songs|
         if songs.name.include?(name)
           self.find_by_name(name)
@@ -47,7 +46,7 @@ class Song
   end 
     
   def self.alphabetical 
-    @@all.sort_by(name) #{ |a, b| a <=> b } 
+    #@@all.sort_by(name) #{ |a, b| a <=> b } 
     
     # alphabetical_list = []
     # @@all.each do |song_instance|
