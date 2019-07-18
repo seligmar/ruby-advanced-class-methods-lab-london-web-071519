@@ -42,7 +42,7 @@ class Song
     
   def self.alphabetical 
     self.find_by_name(name).sort_by { |string| string.length} 
-  #  @@all.sort_by #do |names| 
+   @@all.sort_by #do |names| 
       #names.name.sort { |a, b| a <=> b } 
     binding.pry
     # alphabetical_list = []
