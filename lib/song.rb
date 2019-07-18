@@ -57,7 +57,7 @@ class Song
      new_song.artist_name = artist_name
      new_song
 
-     binding.pry
+     #binding.pry
    end 
   
   def self.destroy_all
