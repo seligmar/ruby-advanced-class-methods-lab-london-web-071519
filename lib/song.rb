@@ -53,7 +53,6 @@ class Song
      artist_name = first_half[0] 
      second_half = first_half[1].split(".")
      name = second_half[0]
-     
      new_song.name = name
      new_song.artist_name = artist_name
      new_song
