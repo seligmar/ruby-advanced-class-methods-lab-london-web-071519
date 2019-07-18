@@ -52,7 +52,7 @@ class Song
      new_info = filename
      first_half = new_info.split(" - ")
      remove_end = new_info.split(".")
-     
+     binding.pry
      #"Taylor Swift - Blank Space.mp3" 
      
    end 
