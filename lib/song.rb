@@ -40,14 +40,15 @@ class Song
     find_by_name(name) ? find_by_name(name) : create_by_name(name)
   end 
     
-  def self.alphabetical 
-   @@all.sort_by do |names|
-     names.sort { |a, b| a <=> b }
-   end 
-  end 
-  
-   def self.create_from_filename(name, artist_name, file)
+  # def self.alphabetical 
+  # @@all.sort_by do |names|
+  #   names.sort { |a, b| a <=> b }
   # end 
+  # end 
+  
+   def self.create_from_filename(name, artist_name, file_format)
+     
+   end 
   
   def self.destroy_all
     self.all.clear 
